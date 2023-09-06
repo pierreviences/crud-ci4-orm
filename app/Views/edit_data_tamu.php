@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Edit Buku Tamu</h1>
         <form action="<?= base_url('proses_edit_tamu')?>" method="post">
-        <input type="hidden" value="<?= $data_tamu->id ?>">
+        <input type="hidden" value="<?= $data_tamu->id ?>" id="id_tamu" name="id_tamu">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Tanggal Berkunjung</label>
             <input type="text" class="form-control" id="tgl_berkunjung" name="tgl_berkunjung" value="<?= $data_tamu->tgl_berkunjung ?>">
