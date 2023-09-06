@@ -32,6 +32,12 @@ class Tamu extends BaseController{
         $tamu_model->update($this->request->getPost('id_tamu'), $this->request->getPost());
         return redirect()->to(base_url('tamu'));    
     }
+
+    public function delete_data_tamu($id = false){
+        $tamu_model = new TamuModel();
+        $tamu_model->delete($id);
+        return redirect()->to(base_url('tamu'));
+    }
 }
 
 ?>
