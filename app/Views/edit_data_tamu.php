@@ -12,30 +12,31 @@
   <body>
     <div class="container">
         <h1>Edit Buku Tamu</h1>
-        <form action="<?= base_url('proses_add_tamu')?>" method="post">
+        <form action="<?= base_url('proses_edit_tamu')?>" method="post">
+        <input type="hidden" value="<?= $data_tamu->id ?>">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Tanggal Berkunjung</label>
-            <input type="text" class="form-control" id="tgl_berkunjung" name="tgl_berkunjung" placeholder="isi tanggal ">
+            <input type="text" class="form-control" id="tgl_berkunjung" name="tgl_berkunjung" value="<?= $data_tamu->tgl_berkunjung ?>">
           </div>
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nama Tamu</label>
-            <input type="text" class="form-control" id="nama_tamu" name="nama_tamu" placeholder="isi nama">
+            <input type="text" class="form-control" id="nama_tamu" name="nama_tamu" value="<?= $data_tamu->nama_tamu ?>">
           </div>
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">No Telepon</label>
-            <input type="text" class="form-control" id="no_telepon" name="no_telepon" placeholder="isi no telepon">
+            <input type="text" class="form-control" id="no_telepon" name="no_telepon" value="<?= $data_tamu->no_telepon ?>">
           </div>
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Alamat</label>
-            <input type="text" class="form-control" id="alamat" name="alamat" placeholder="isi alamat">
+            <input type="text" class="form-control" id="alamat" name="alamat" value="<?= $data_tamu->alamat ?>">
           </div>
 
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Keperluan</label>
-            <input type="text" class="form-control" id="keperluan" name="keperluan" placeholder="isi keperluan">
+            <input type="text" class="form-control" id="keperluan" name="keperluan" value="<?= $data_tamu->keperluan ?>">
           </div>
             <div class="mb-3">
             <button type="submit" class="btn btn-primary">Submit</button>
