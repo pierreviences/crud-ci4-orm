@@ -14,6 +14,18 @@ class Tamu extends BaseController{
     public function add_data_tamu(){
         return view('add_data_tamu');
     }
+
+    public function proses_add_tamu(){
+        $tamu_model = new TamuModel();
+        $tamu_model->insert($this->request->getPost());
+        return redirect()->to(base_url('tamu'));    
+    }
+
+    public function edit_data_tamu($id = false){
+        $tamu_model = new TamuModel();
+        $data_tamu = $tamu_model->find($id);
+        return view('edit_data_tamu', ['data_tamu' => $data_tamu]);
+    }
 }
 
 ?>

@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-        <h1>Tambah Buku Tamu</h1>
+        <h1>Edit Buku Tamu</h1>
         <form action="<?= base_url('proses_add_tamu')?>" method="post">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Tanggal Berkunjung</label>
