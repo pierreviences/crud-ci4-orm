@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/tamu', 'Tamu::index');
+$routes->get('/add_data_tamu', 'Tamu::add_data_tamu');

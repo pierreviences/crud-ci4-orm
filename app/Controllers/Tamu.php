@@ -10,6 +10,10 @@ class Tamu extends BaseController{
         $all_data_tamu = $tamu_model->findAll();
         return view('tamu', ['all_data_tamu' => $all_data_tamu]);
     }
+
+    public function add_data_tamu(){
+        return view('add_data_tamu');
+    }
 }
 
 ?>
