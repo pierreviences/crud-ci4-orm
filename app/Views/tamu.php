@@ -29,6 +29,11 @@
                         <td><?= $tamu->alamat ?></td>
                         <td><?= $tamu->no_telepon ?></td>
                         <td><?= $tamu->keperluan ?></td>
+                        <td>
+                            <a href="<?= base_url('edit_data_tamu/').$tamu->id?>" class="btn btn-info btn-sm"> Edit </a>
+                            <a href="<?= base_url('delete_data_tamu/').$tamu->id?>" class="btn btn-danger btn-sm"> Delete </a>
+                    
+                        </td>
 
                     </tr>
                 <?php endforeach ?>
